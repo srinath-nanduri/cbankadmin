@@ -1,0 +1,56 @@
+<!-- #d8c3a5;   -->
+<!-- background: linear-gradient (to bottom, #33ccff 0%, #ff99cc 100%) -->
+  <!-- <nav class="navbar navbar-expand-lg" style="background-color: #75c9b7;"> -->
+  <!-- <nav class="navbar navbar-expand-lg" style="background: linear-gradient(to bottom, #0d5d77 0%, #75c9bc 100%);"> -->
+  <nav class="navbar navbar-expand-lg" style="background: linear-gradient(to bottom, rgba(13, 93, 119, 0.5) 0%, rgba(117, 201, 188, 0.5));">
+
+
+
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/dash" >
+        <img src="../assets/LF_top.png" alt="LF" height="45px" width="90px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"  aria-current="page" routerLink="/dash" routerLinkActive='activebutton'>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink='/accounts'
+            routerLinkActive='activebutton' >Accounts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink='/loans'
+            routerLinkActive='activebutton' >Loans</a>
+          </li>
+
+          <!-- <li class="nav-item">
+            <a class="nav-link" routerLink='/clog'
+            routerLinkActive='activebutton' >CLOG</a>
+          </li> -->
+
+
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink='/cust-ser'
+                routerLinkActive='activebutton'>Customer Service</a></li>
+              <li><a class="dropdown-item" routerLink='/sett'
+                routerLinkActive='activebutton'>Settings</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>

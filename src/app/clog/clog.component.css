@@ -1,0 +1,16 @@
+input{
+    border: 0px;
+    border-bottom: 1px solid black;
+    background-color: inherit;
+}
+
+
+input:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 769px) {
+    .dno{
+        display: none !important;
+    }
+  }

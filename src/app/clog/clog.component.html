@@ -1,0 +1,59 @@
+
+
+
+
+<div class="row" style="margin-right: 0px;" *ngIf="('false'==displog); else elseBlo">
+	<div class="col-xl-7 col-lg-7 col-md-7 d-flex align-items-center justify-content-center dno" >
+<img src="../assets/LF_b.png" alt="LF" height="400px"  class="rounded-4 img-fluid" width="400px" style="margin-top: 60px; ">
+	</div>
+	<div class="col-xl-5 col-lg-5 col-md-5 mx-auto d-flex justify-content-center align-items-center">
+		<div class="container ms-auto align-items-center" style="margin-top: 30px;">
+			<div class="mt-4 p-5 h-60 mx-auto border rounded-3" style="width: fit-content; background-color: #eae7dc;">
+			<h2 class="mx-auto" style="width: fit-content;">Login</h2>
+		
+				<form #logForm="ngForm" (ngSubmit)="submit(logForm)" novalidate>
+					Username : <input class="input" type="text" name="user" ngModel required #user="ngModel" autocomplete="off"> 
+					
+					<br><br>
+					Password : <input name="pwd" class="input" type="password" ngModel>
+					
+					 <br><br>
+					<button class="btn btn-primary">Submit</button> 
+				</form>	
+				<br>
+				<span *ngIf="lc" style="color: tomato;">Username or Password incorrect</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<ng-template #elseBlo>
+{{val()}}
+</ng-template>
+
+
+
+
+
+
+
+
+
+<!-- <div class="container ms-auto" style="margin-top: 70px;">
+	<div class="mt-4 p-5 h-100 mx-auto bg-light border rounded-3" style="width: fit-content;">
+	<h2 class="mx-auto" style="width: fit-content;">Login</h2>
+
+		<form #logForm="ngForm" (ngSubmit)="submit(logForm)" novalidate>
+			Username : <input class="input" type="text" name="user" ngModel required #user="ngModel" autocomplete="off"> 
+			
+			<br><br>
+			Password : <input name="pwd" class="input" type="password" ngModel>
+			
+			 <br><br>
+			<button class="btn btn-primary">Submit</button> 
+		</form>	
+	</div>
+</div> -->
+

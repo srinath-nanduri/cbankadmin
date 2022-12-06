@@ -1,0 +1,13 @@
+
+{{setC()}}
+
+<div *ngIf="f1=='true'; else elseBlock">
+    <p>Dash Works</p>
+    <!-- {{f1}} -->
+</div>
+
+<ng-template #elseBlock>
+    <!-- <p>No Access</p> -->
+    {{no_val()}}
+</ng-template>
+

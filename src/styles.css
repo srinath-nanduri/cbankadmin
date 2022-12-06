@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+/* body{
+    background-image: url(/assets/landingbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ */
+
+body{
+
+    height:100vh;
+
+    background-image: url('/assets/landingbg.jpg');
+
+    background-size:cover;
+
+    background-repeat:no-repeat;
+
+    background-attachment: fixed;
+
+     font-family: 'Montserrat', sans-serif;
+
+    }
+
+
+
+html{
+
+    height: 100%;
+
+   
+
+}
