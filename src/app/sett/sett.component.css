@@ -1,0 +1,43 @@
+section{
+    margin-top: 5rem;
+    /* padding-top: 5rem;
+    padding-bottom: 5rem; */
+    width: 100%;
+    /* max-width: 1000px; */
+    max-width: 70%;
+    height: 100%;   
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    border-radius: 1.5rem;
+    border-style:inset;
+    min-height: 95vh;
+    color:black;
+    background-color: white;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+    box-shadow: 1.5rem 1.5rem rgba(4, 31, 4,0.2);
+}
+
+.header{
+    padding-top:1rem;
+    padding-left:1rem;
+    text-align: left;
+    text-decoration: black;
+    font-size: 18px;
+}
+
+hr{
+    border-top: 1px solid #8c8b8b;
+    text-align: center;
+    }
+
+.hell{ 
+           padding-top: 10rem;
+    }
+
+.card-details{
+    background-color: #EBECF0;
+}
