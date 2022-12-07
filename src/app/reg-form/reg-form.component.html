@@ -2,24 +2,58 @@
     <div class="container">
         <div class="header">Enter details to start your journey now!</div>
         <hr>
-        <form>
+        <form #aadharform = "ngForm" (ngSubmit)="validate()">
             <div class="row">
                 <div class="col-md gy-2">
-                    <input type="text" class="form-control" placeholder="Mobile Number registered with Aadhaar">
+                    <input
+                        required
+                        type="text"
+                        class="form-control"
+                        name="mobileNo" 
+                        placeholder="Mobile Number registered with Aadhaar" 
+                        [(ngModel)]="mobileNo"
+                    >
                 </div>
                 <div class="col-md gy-2">
-                    <input type="email" class="form-control" placeholder="Email address">
+                    <input 
+                        required    
+                        type="email" 
+                        class="form-control"
+                        name="email" 
+                        placeholder="Email address" 
+                        [(ngModel)]="email"
+                    >
                 </div>
             </div>
             <div class="row">
                 <div class="col-md gy-2">
-                    <input type="text" class="form-control" placeholder="Permanent Account Number(PAN)">
+                    <input
+                        required 
+                        type="text" 
+                        class="form-control" 
+                        name="PANcard" 
+                        placeholder="Permanent Account Number(PAN)"
+                        [(ngModel)]="PANcard"
+                    >
                 </div>
                 <div class="col-md gy-2">
-                    <input type="text" class="form-control" placeholder="12-digit Aadhaar number">
+                    <input 
+                        required
+                        type="text" 
+                        class="form-control" 
+                        name="Aadhar" 
+                        placeholder="12-digit Aadhaar number" 
+                        [(ngModel)]="Aadhar"
+                    >
                 </div>
             </div>
-            <button class="btn button btn-sm me-5 float-end" >Verify Aadhaar</button>
+            <button 
+                class="btn button btn-sm me-5 float-end" 
+                name="submit" 
+                type="submit" 
+                ngSubmit="validate()">
+                Verify Aadhaar
+            </button>
 
         </form>
         <div class="header small-pad">Please enter your <strong>professional & personal details</strong> </div>
