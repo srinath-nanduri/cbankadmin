@@ -12,4 +12,8 @@ export class RegFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  validate(){
+    
+  }
+
 }

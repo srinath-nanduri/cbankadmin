@@ -33,7 +33,7 @@ form{
     padding-left:1rem;
     text-align: left;
     text-decoration: black;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .row{
@@ -45,6 +45,7 @@ form{
     border-radius: 1.5rem;
     background-color: rgb(131, 182, 131);
     size: 1rem;
+    margin-top: 1rem;
 }
 
 .button:hover{
@@ -57,7 +58,10 @@ border-top: 1px solid #8c8b8b;
 text-align: center;
 }
 
-.hell{
+.small-pad{
+    padding-top: 4rem;
+}
+.pad{
     padding-top: 10rem;
 }
 
