@@ -26,6 +26,7 @@ import { CardsComponent } from './cust-ser/cards/cards.component';
 import { TransactionsComponent } from './cust-ser/transactions/transactions.component';
 import { FeedbackComponent } from './cust-ser/feedback/feedback.component';
 import { IssueFormComponent } from './cust-ser/issue-form/issue-form.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { IssueFormComponent } from './cust-ser/issue-form/issue-form.component';
     CardsComponent,
     TransactionsComponent,
     FeedbackComponent,
-    IssueFormComponent
+    IssueFormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

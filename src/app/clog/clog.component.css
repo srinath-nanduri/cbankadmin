@@ -9,6 +9,12 @@ input:focus{
     outline: none;
 }
 
+.pnt{
+    cursor: pointer;
+    color: rgb(93, 62, 121);
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 769px) {
     .dno{
         display: none !important;
