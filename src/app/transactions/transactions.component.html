@@ -1,0 +1,31 @@
+
+
+
+
+<div class="container mx-auto mt-5">
+    <table class="table table-striped" style="background-color: rgb(163, 202, 219);">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Customer Id</th>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+            <th scope="col">Withdraw</th>
+            <th scope="col">Deposit</th>
+            <th scope="col">Balance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let t of transactions">
+            <th scope="row">{{t.id}}</th>
+            <th scope="row">{{t.cid}}</th>
+            <td> {{t.tdate}} </td>
+            <td> {{t.ttime}} </td>
+            <td> {{t.twithdraw}} </td>
+            <td> {{t.tdeposit}} </td>
+            <td> {{t.tbalance}} </td>
+          </tr>
+          
+        </tbody>
+      </table>
+</div>

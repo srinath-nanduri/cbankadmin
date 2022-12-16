@@ -1,0 +1,31 @@
+
+
+
+
+<div class="container mx-auto mt-5">
+    <table class="table table-striped" style="background-color: rgb(163, 202, 219);">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Customer Name</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Date</th>
+            <th scope="col">Type</th>
+            <th scope="col">Description</th>
+            <!-- <th scope="col">Balance</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of issues">
+            <th scope="row">{{i.id}}</th>
+            <th scope="row">{{i.iname}}</th>
+            <td> {{i.imobile}} </td>
+            <td> {{i.idate}} </td>
+            <td> {{i.itype}} </td>
+            <td> {{i.idesc}} </td>
+            <!-- <td> {{t.tbalance}} </td> -->
+          </tr>
+          
+        </tbody>
+      </table>
+</div>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
+import { HttpClientService } from '../service/http-client.service';
 // import {Clog} from '../clogt';
 
 @Component({
@@ -23,6 +24,7 @@ export class ClogComponent implements OnInit {
 
   lc:boolean;
   displog:string='false';
+  vals:String[]=[];
 
 
 
@@ -30,16 +32,16 @@ export class ClogComponent implements OnInit {
   onSubmit(){ this.submitted = true;}
 
 
-  constructor(private _router: Router, private cookSer: CookieService) { 
+  constructor(private _router: Router, private cookSer: CookieService, private httpClientService:HttpClientService) { 
     this.lc=false;
-    this.displog = this.cookSer.get('logcorr');
+
   }
 
   
 
   ngOnInit(): void {
 
-    // this.cookSer.set('logcorr', 'false');
+    this.displog = this.cookSer.get('logcorr');
 
   }
 
@@ -51,12 +53,9 @@ export class ClogComponent implements OnInit {
 
     let u = form.value.user;
 
-    // const d = this.auth["Srinath"];
     if(this.cust.includes(u)){
       if(form.value.pwd==this.auth[u]){
-        // document.writeln("Nig");
         this._router.navigateByUrl('/dash'); // redirect user to dashboard using ts. 
-        // this.logc.setLog(true);
 
         this.cookSer.set('logcorr','true');
         console.log(this.cookSer.get('logcorr'));
@@ -65,11 +64,8 @@ export class ClogComponent implements OnInit {
 
       }
       else{
-        // this.login_err = true;
-        // this.log_corr = true;
         this.lc = true;
 
-        // this.logc.setLog(false);
         this.cookSer.set('logcorr','false');
         this.displog = this.cookSer.get('logcorr');
 
@@ -77,10 +73,26 @@ export class ClogComponent implements OnInit {
     }
     else{
       this.lc = true;
-      // this.logc.setLog(false);
       this.cookSer.set('logcorr','false');
       this.displog = this.cookSer.get('logcorr');
     }
   }
+
+  // submit(form: NgForm){
+
+  //   let email = form.value.user;
+  //   let pass = form.value.pwd;
+
+  //   this.httpClientService.valUser(email, pass).subscribe(
+  //     response =>{this.vals=response;},
+  //    );
+
+  //    console.log(this.vals);
+
+  // }
+
+
+  
+  
 
 }

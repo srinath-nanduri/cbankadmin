@@ -1,0 +1,35 @@
+
+
+
+
+<div class="container mx-auto mt-5">
+    <table class="table table-striped" style="background-color: rgb(163, 202, 219);">
+        <thead>
+          <tr>
+
+
+            <th scope="col">Id</th>
+            <th scope="col">Type</th>
+            <th scope="col">Customer Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Staff</th>
+            <th scope="col">Branch</th>
+            <th scope="col">Description</th>
+            <!-- <th scope="col">Balance</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let f of feedback">
+
+            <th scope="row">{{f.fid}}</th>
+            <td>{{f.ftype}}</td>
+            <td>{{f.fname}}</td>
+            <td>{{f.femail}}</td>
+            <td>{{f.fstaff}}</td>
+            <td>{{f.fbranch}}</td>
+            <td>{{f.fdesc}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+</div>
